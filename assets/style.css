@@ -8,6 +8,7 @@ body {
 
 .header {
     display: flex;
+    flex-wrap: wrap;
     flex-direction: row;
     padding: 10px 0px;
     font-family: Arial, Helvetica, sans-serif;
@@ -18,14 +19,19 @@ body {
 
 
 h1 {
-    flex: 0 0 25%;    
+    flex: 1;    
     font-size: 50px;
     background-color: lightgrey;
     color: black;
 }
 
+h2 h3  {
+   padding:0%;
+   margin: 0%
+}
 nav .bar{
-    padding: 0         
+    padding: 0 
+    flex: 1;        
     font-size: 20px;
     text-decoration: none; 
     color: white;          
@@ -39,6 +45,11 @@ nav .bar{
     list-style-type: none;    
  }
 
+ .bar:hover {
+  background-color: lightgray;
+  color:black;
+ }
+
 .hero {
     width: 100%;
     height: 150px; 
@@ -47,66 +58,68 @@ nav .bar{
     border: 3px solid;   
 
 }
+content {
+  display:flex
+}
 
- p {
-    font-size: 20px;    
- }
+.card-container {
+  display: flex;
+  flex: 4;
+  background-color: #fff;
+  padding: 50px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: ;
+  align-items: flex-start;
+}
 
- .content {
-    display: flex;
-    flex-wrap: wrap;   
- }    
+.card {
+  border-style: solid;
+  border-width: 1px;
+  border-radius: 50px;
+  padding: 10px;
+  flex: 0 0 300px;
+  box-shadow: 10px 10px 5px #aaaaaa;
+  margin: 20px;
+  height: 300px;
+  width: 300px
+  justify-content: center;
+}
 
-
-
- .middle {    
-    flex: 0 0 50% 
-    flex-position: column;   
-    float:right;
-    width: 75%;
-    padding: 40px 0px
- }
-
-
- .sidebar {
-    flex: 0 0 25%;  
-  padding: 40px;
-  width: 25%;
-  text-align: center;
- }
-
- .side {
-    flex: 0 0 0 
-    
- }
-
- .side img {
-    height: 100px;
- }
-
+.card img {
+  height: 195px;
+  width: 195px;
+  object-fit: contain;
+}
  .footer {
-    display: flex;
+   display: flex;
    justify-content: center;
    padding: 0px;
-    font-family: Arial, Helvetica, sans-serif; 
-    text-align: center;   
-    background-color: rgb(129, 14, 14);
-    color:white;
-     
+   font-family: Arial, Helvetica, sans-serif; 
+   text-align: center;   
+   background-color: rgb(129, 14, 14);
+   color:white;     
     
+ }
+
+ nav header {
+  padding: 0px;
+  margin:0px;
+  font-size: 30px;
  }
 
  .links{
-   display: flex;
-   gap: 1rem;
-   padding: 0px;
-   margin: 0px;
+   display: flex;   
+   gap: 10rem;
+   padding: 20px;
+   margin: 10px;
    list-style: none;
    
  }
 
- .links li a{
+ .links li a{   
    text-decoration: none;
    color: white;
+   font-size: 25px;
  }
     
