@@ -1,89 +1,109 @@
 * {
- box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 :root {
   --dark: rgb(129, 14, 14);
   --light: lightgrey;
+  --secondary: rgb(102, 101, 101);
 }
 
 body {
-    background-color: var(--light);
+  background-image: url("light-grey-crumpled-wrinkled-paper-texture-background_206881-714.jpg");
+  background-size: contain;
 }
 
 .header {
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
-    padding: 10px 0px;
-    font-family: Arial, Helvetica, sans-serif;
-    justify-content: space-between;
-    background-color: var(--dark);
-    
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  align-content: center;
+  padding: 10px 0px;
+  font-family: Arial, Helvetica, sans-serif;
+  justify-content: space-between;
+  background-color: var(--dark);
 }
 
-
-
 h1 {
-    flex: 1;    
-    font-size: 50px;
-    background-color: var(--light);
-    color: black;
-    margin: auto;
+  flex: 1 0;
+  flex-direction: row;
+  font-size: 60px;
+  background-image: url("light-grey-crumpled-wrinkled-paper-texture-background_206881-714.jpg");
+  background-size: cover;
+  color: black;
+  margin: auto;
 }
 
 .bar-container {
-display: flex;
-flex-wrap: wrap;
-flex-direction: row; 
-list-style-type: none; 
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  list-style-type: none;
 }
-.bar{    
-    flex: 1;
-    font-size: 20px;
-    text-decoration: none; 
-    color: var(--light);          
-    padding: 0px;
-    margin: 50px 5px 5px 0px;
-        
+.bar {
+  flex: 1;
+  font-size: 20px;
+  text-decoration: none;
+  color: var(--light);
+  padding: 0px;
+  margin: 50px 5px 5px 0px;
 }
- 
- .bar:hover {
-  background-color: var(--light);
-  color:black;
- }
- 
 
+.bar:hover {
+  background-color: var(--light);
+  color: black;
+}
 
 .hero {
-    width: 100%;
-    height: 150px; 
-    background-image: url("fractal.jpg");   
-    margin-bottom: 25px;
-    border: 3px solid;   
-
+  width: 100%;
+  height: 150px;
+  background-image: url("fractal.jpg");
+  margin-bottom: 25px;
+  border: 3px solid;
 }
 
-h2  {
- padding:0%;
- margin: 0%;
- font-size: 35px;
+h2 {
+  padding: 0%;
+  margin: 0%;
+  font-size: 35px;
+  border-bottom: 2px solid black;
 }
 
+.middle p {
+  font-size: 25px;
+}
+.middle {
+
+  margin: auto;
+  padding: 20px;
+}
+
+img {
+  float: left;
+  width: 100px;
+  height: 100px;
+  padding: auto;
+  margin: auto;
+  border: 1px solid black;
+  border-radius: 50px;
+  object-fit: cover;
+}
 content {
-  display:flex
-  
+  display: flex;
+}
+
+.work {
+  padding: 20px;
 }
 
 .card-container {
   display: flex;
-  background-color: var(--light);
+  background-color: none;
   padding: 50px;
   display: flex;
   flex-wrap: wrap;
   justify-content: ;
   align-items: flex-start;
-
 }
 
 .card {
@@ -97,125 +117,114 @@ content {
   height: 300px;
   width: 300px;
   justify-content: space-between;
-  align-items:center;  
+  align-items: center;
   background-size: contain;
   backdrop-filter: blur;
 }
 
 .card:hover {
- box-shadow: 15px 15px 5px rgb(66, 66, 66); 
- transform: rotate(15deg);
+  box-shadow: 15px 15px 5px rgb(66, 66, 66);
+  transform: rotate(8deg);
 }
 
-.card title{
+.card title {
   display: flex;
   flex: 0 1;
   flex-wrap: wrap;
-  background-color: var(--light);
-  /* background-color: rgba(0,0,0, 0.4); */
+  background-color: var(--secondary); 
   border-radius: 150px;
   font-weight: bolder;
   margin: 5px;
-  
   padding: 10px;
-  margin: 10px;
-  }
-
-.card p {
-background-color: var(--light);
-  border-radius: 150px;
-margin: 5px;
+  margin: auto;
 }
- 
+
+title {
+  text-decoration: none;
+  color: var(--light);
+}
+.card p {
+  background-color: var(--secondary);
+  color:  var(--light);
+  border-radius: 150px;
+  margin: auto;
+}
 
 .one {
-flex: 1 0 300px;
-background-image: url("screencapture-difurung-github-io-Challenge-1-Refactor-2022-10-09-18_03_01.png");
-/* filter: blur(8px);
+  flex: 1 0 300px;
+  background-image: url("screencapture-difurung-github-io-Challenge-1-Refactor-2022-10-09-18_03_01.png");
+  /* filter: blur(8px);
   -webkit-filter: blur(8px); BLUR!!*/
-background-size: 700px;
-width: 700px;
-background-repeat: no-repeat;
-text-decoration: none;
-
+  background-size: 700px;
+  width: 700px;
+  background-repeat: no-repeat;
+  text-decoration: none;
 }
-
 
 .two {
-flex: 0 0 300px;
-background-image: url("screencapture-difurung-github-io-Challenge-1-Refactor-2022-10-09-18_03_01.png");
-width: 100%;
-background-size: 700px;
-text-decoration: none;
-
+  flex: 0 0 300px;
+  background-image: url("Prework.png");
+  width: 100%;
+  background-size: contain;
+  text-decoration: none;
 }
 .three {
-flex: 0 0 300px;
-background-image: url("screencapture-difurung-github-io-Challenge-1-Refactor-2022-10-09-18_03_01.png");
-width: 100%;
-background-size: 700px;
-text-decoration: none;
-
-}
-
- .footer { 
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
-    padding: 25px 0px 0 0 ;
-    font-family: Arial, Helvetica, sans-serif;
-    justify-content: center;
-    background-color: var(--dark);
-    color: var(--light);   
-    
- }
-
- .footer h2 {
-  margin: 2%
-  
- }
-
- .links {   
-   display: flex;    
-   color: var(--light);
-   font-size: 25px;
-   padding: 20px;
-   margin: 10px;
-   list-style: none;
-   
- }
-
-.contacts {   
-  flex-direction: row; 
-  flex-wrap: wrap; 
+  flex: 0 0 300px;
+  background-image: url("JavaScript-logo.png");
+  background-size: contain;
+  width: 100%;
   text-decoration: none;
-   color: var(--light);
-   font-size: 25px;
-   padding: 0px 20px 20px 0px;
- }
-    
-
- /*@media screen and (max-width: 760px) {
-  
-.bar-container {
-
-  flex-direction: column;
 }
-  
-  .links {
-    flex-direction: column;
-  }*/
 
-  
- 
- @media screen and (max-width: 760px) {
-  
-.bar-container {
-
-  flex-direction: column;
+.footer {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  align-content: center;
+  padding: 20px 0px 0 0;
+  font-family: Arial, Helvetica, sans-serif;
+  justify-content: center;
+  background-color: var(--dark);
+  color: var(--light);
 }
-  
-  .links {
+
+.footer h2 {
+  margin: 22px 0 5px 0;
+  border: none;
+}
+
+.links {
+  display: flex;
+  color: var(--light);
+  font-size: 25px;
+  padding: 20px;
+  margin: 10px;
+  list-style: none;
+}
+
+.contacts {
+  flex-direction: row;
+  flex-wrap: wrap;
+  text-decoration: none;
+  color: var(--light);
+  font-size: 25px;
+  padding: 0px 20px 20px 0px;
+}
+
+.contacts:hover {  
+background-color: var(--light);
+  color: black;  
+}
+
+@media screen and (max-width: 760px) {
+
+  .header, .footer {
     flex-direction: column;
+    justify-content: center;
   }
- }
+  .bar-container, .links {
+    flex-direction: column;
+    
+  }
+
+  
