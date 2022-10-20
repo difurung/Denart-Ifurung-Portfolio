@@ -2,8 +2,13 @@
  box-sizing: border-box;
 }
 
+:root {
+  --dark: rgb(129, 14, 14);
+  --light: lightgrey;
+}
+
 body {
-    background-color: white;
+    background-color: var(--light);
 }
 
 .header {
@@ -13,50 +18,42 @@ body {
     padding: 10px 0px;
     font-family: Arial, Helvetica, sans-serif;
     justify-content: space-between;
-    background-color: rgb(129, 14, 14);
+    background-color: var(--dark);
     
 }
+
 
 
 h1 {
     flex: 1;    
     font-size: 50px;
-    background-color: lightgrey;
+    background-color: var(--light);
     color: black;
+    margin: auto;
 }
 
-h2  {
- padding:0%;
- margin: 0%;
- font-size: 35px;
-}
-
-nav {
-
-  display: flex;
+.bar-container {
+display: flex;
 flex-wrap: wrap;
+flex-direction: row; 
+list-style-type: none; 
 }
-.bar{
-  
-    padding: 0 
-    flex: 1;        
+.bar{    
+    flex: 1;
     font-size: 20px;
     text-decoration: none; 
-    color: white;          
+    color: var(--light);          
     padding: 0px;
     margin: 50px 5px 5px 0px;
-    float:right    
+        
 }
-
- .header nav ul li {
-    display: inline-flex;
-    list-style-type: none;    
- }
-
+ 
  .bar:hover {
-  background-color: lightgray;
+  background-color: var(--light);
   color:black;
  }
+ 
+
 
 .hero {
     width: 100%;
@@ -66,6 +63,13 @@ flex-wrap: wrap;
     border: 3px solid;   
 
 }
+
+h2  {
+ padding:0%;
+ margin: 0%;
+ font-size: 35px;
+}
+
 content {
   display:flex
   
@@ -73,12 +77,13 @@ content {
 
 .card-container {
   display: flex;
-  background-color:#fff;
+  background-color: var(--light);
   padding: 50px;
   display: flex;
   flex-wrap: wrap;
   justify-content: ;
   align-items: flex-start;
+
 }
 
 .card {
@@ -93,53 +98,65 @@ content {
   width: 300px;
   justify-content: space-between;
   align-items:center;  
+  background-size: contain;
+  backdrop-filter: blur;
 }
 
 .card:hover {
- box-shadow: 15px 15px 5px #aaaaaa; 
+ box-shadow: 15px 15px 5px rgb(66, 66, 66); 
  transform: rotate(15deg);
 }
 
-.card header {
+.card title{
   display: flex;
   flex: 0 1;
   flex-wrap: wrap;
-  background-color: lightgray;
+  background-color: var(--light);
+  /* background-color: rgba(0,0,0, 0.4); */
   border-radius: 150px;
   font-weight: bolder;
+  margin: 5px;
+  
   padding: 10px;
   margin: 10px;
+  }
+
+.card p {
+background-color: var(--light);
+  border-radius: 150px;
+margin: 5px;
 }
+ 
 
 .one {
-flex: 1 0 33%;
+flex: 1 0 300px;
 background-image: url("screencapture-difurung-github-io-Challenge-1-Refactor-2022-10-09-18_03_01.png");
+/* filter: blur(8px);
+  -webkit-filter: blur(8px); BLUR!!*/
 background-size: 700px;
 width: 700px;
 background-repeat: no-repeat;
+text-decoration: none;
+
 }
 
 
 .two {
-flex: 0;
+flex: 0 0 300px;
 background-image: url("screencapture-difurung-github-io-Challenge-1-Refactor-2022-10-09-18_03_01.png");
-width: 300px;
+width: 100%;
+background-size: 700px;
+text-decoration: none;
 
 }
 .three {
-flex: 0;
+flex: 0 0 300px;
 background-image: url("screencapture-difurung-github-io-Challenge-1-Refactor-2022-10-09-18_03_01.png");
-width: 300px;
+width: 100%;
+background-size: 700px;
+text-decoration: none;
+
 }
-
-
-.card img {
-  height: 195px;
-  width: 195px;
-  object-fit: contain;
-  border-radius: 150px;
-}
-
 
  .footer { 
     display: flex;
@@ -148,8 +165,8 @@ width: 300px;
     padding: 25px 0px 0 0 ;
     font-family: Arial, Helvetica, sans-serif;
     justify-content: center;
-    background-color: rgb(129, 14, 14);
-    color: white;   
+    background-color: var(--dark);
+    color: var(--light);   
     
  }
 
@@ -159,9 +176,8 @@ width: 300px;
  }
 
  .links {   
-   display: flex; 
-   
-   color: white;
+   display: flex;    
+   color: var(--light);
    font-size: 25px;
    padding: 20px;
    margin: 10px;
@@ -171,10 +187,35 @@ width: 300px;
 
 .contacts {   
   flex-direction: row; 
-   flex-wrap: wrap; 
-    text-decoration: none;
-   color: white;
+  flex-wrap: wrap; 
+  text-decoration: none;
+   color: var(--light);
    font-size: 25px;
    padding: 0px 20px 20px 0px;
  }
     
+
+ /*@media screen and (max-width: 760px) {
+  
+.bar-container {
+
+  flex-direction: column;
+}
+  
+  .links {
+    flex-direction: column;
+  }*/
+
+  
+ 
+ @media screen and (max-width: 760px) {
+  
+.bar-container {
+
+  flex-direction: column;
+}
+  
+  .links {
+    flex-direction: column;
+  }
+ }
