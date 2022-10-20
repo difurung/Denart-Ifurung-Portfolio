@@ -1,5 +1,5 @@
 * {
-   box-sizing: border-box;
+ box-sizing: border-box;
 }
 
 body {
@@ -25,11 +25,19 @@ h1 {
     color: black;
 }
 
-h2 h3  {
-   padding:0%;
-   margin: 0%
+h2  {
+ padding:0%;
+ margin: 0%;
+ font-size: 35px;
 }
-nav .bar{
+
+nav {
+
+  display: flex;
+flex-wrap: wrap;
+}
+.bar{
+  
     padding: 0 
     flex: 1;        
     font-size: 20px;
@@ -53,19 +61,19 @@ nav .bar{
 .hero {
     width: 100%;
     height: 150px; 
-    background-image: url("fractal-2090592_1920.jpg");   
+    background-image: url("fractal.jpg");   
     margin-bottom: 25px;
     border: 3px solid;   
 
 }
 content {
   display:flex
+  
 }
 
 .card-container {
   display: flex;
-  flex: 4;
-  background-color: #fff;
+  background-color:#fff;
   padding: 50px;
   display: flex;
   flex-wrap: wrap;
@@ -74,52 +82,99 @@ content {
 }
 
 .card {
+  display: flex;
+  flex-direction: column;
   border-style: solid;
   border-width: 1px;
-  border-radius: 50px;
+  border-radius: 150px;
   padding: 10px;
-  flex: 0 0 300px;
-  box-shadow: 10px 10px 5px #aaaaaa;
-  margin: 20px;
+  margin: 0px 50px 50px 0px;
   height: 300px;
-  width: 300px
-  justify-content: center;
+  width: 300px;
+  justify-content: space-between;
+  align-items:center;  
 }
+
+.card:hover {
+ box-shadow: 15px 15px 5px #aaaaaa; 
+ transform: rotate(15deg);
+}
+
+.card header {
+  display: flex;
+  flex: 0 1;
+  flex-wrap: wrap;
+  background-color: lightgray;
+  border-radius: 150px;
+  font-weight: bolder;
+  padding: 10px;
+  margin: 10px;
+}
+
+.one {
+flex: 1 0 33%;
+background-image: url("screencapture-difurung-github-io-Challenge-1-Refactor-2022-10-09-18_03_01.png");
+background-size: 700px;
+width: 700px;
+background-repeat: no-repeat;
+}
+
+
+.two {
+flex: 0;
+background-image: url("screencapture-difurung-github-io-Challenge-1-Refactor-2022-10-09-18_03_01.png");
+width: 300px;
+
+}
+.three {
+flex: 0;
+background-image: url("screencapture-difurung-github-io-Challenge-1-Refactor-2022-10-09-18_03_01.png");
+width: 300px;
+}
+
 
 .card img {
   height: 195px;
   width: 195px;
   object-fit: contain;
+  border-radius: 150px;
 }
- .footer {
-   display: flex;
-   justify-content: center;
-   padding: 0px;
-   font-family: Arial, Helvetica, sans-serif; 
-   text-align: center;   
-   background-color: rgb(129, 14, 14);
-   color:white;     
+
+
+ .footer { 
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    padding: 25px 0px 0 0 ;
+    font-family: Arial, Helvetica, sans-serif;
+    justify-content: center;
+    background-color: rgb(129, 14, 14);
+    color: white;   
     
  }
 
- nav header {
-  padding: 0px;
-  margin:0px;
-  font-size: 30px;
+ .footer h2 {
+  margin: 2%
+  
  }
 
- .links{
-   display: flex;   
-   gap: 10rem;
+ .links {   
+   display: flex; 
+   
+   color: white;
+   font-size: 25px;
    padding: 20px;
    margin: 10px;
    list-style: none;
    
  }
 
- .links li a{   
-   text-decoration: none;
+.contacts {   
+  flex-direction: row; 
+   flex-wrap: wrap; 
+    text-decoration: none;
    color: white;
    font-size: 25px;
+   padding: 0px 20px 20px 0px;
  }
     
