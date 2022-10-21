@@ -4,13 +4,13 @@
 
 :root {
   --dark: rgb(129, 14, 14);
-  --light: lightgrey;
+  --light: ivory;
   --secondary: rgb(102, 101, 101);
 }
 
 body {
-  background-image: url("light-grey-crumpled-wrinkled-paper-texture-background_206881-714.jpg");
-  background-size: contain;
+  background-image: url("1746747.jpg");
+  background-size: cover;
 }
 
 .header {
@@ -28,7 +28,7 @@ h1 {
   flex: 1 0;
   flex-direction: row;
   font-size: 60px;
-  background-image: url("light-grey-crumpled-wrinkled-paper-texture-background_206881-714.jpg");
+  background-image: url("1746747.jpg");
   background-size: cover;
   color: black;
   margin: auto;
@@ -80,12 +80,12 @@ h2 {
 
 img {
   float: left;
-  width: 100px;
-  height: 100px;
+  width: 160px;
+  height: 160px;
   padding: auto;
-  margin: auto;
-  border: 1px solid black;
-  border-radius: 50px;
+  margin: 15px;
+  border: 3px solid black;
+  border-radius: 80px;
   object-fit: cover;
 }
 content {
@@ -221,10 +221,9 @@ background-color: var(--light);
   .header, .footer {
     flex-direction: column;
     justify-content: center;
+    
   }
   .bar-container, .links {
     flex-direction: column;
     
   }
-
-  
