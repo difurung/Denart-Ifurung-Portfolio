@@ -45,8 +45,9 @@ h1 {
   font-size: 20px;
   text-decoration: none;
   color: var(--light);
-  padding: 0px;
+  padding: 3px;
   margin: 50px 5px 5px 0px;
+  
 }
 
 .bar:hover {
@@ -98,13 +99,11 @@ content {
   padding: 20px;
 }
 
-.card-container {
-  display: flex;
+.card-container {  
   background-color: none;
   padding: 50px;
   display: flex;
   flex-wrap: wrap;
-  justify-content: ;
   align-items: flex-start;
 }
 
@@ -121,8 +120,7 @@ content {
   justify-content: space-between;
   align-items: center;
   background-size: contain;
-  backdrop-filter: blur;
-}
+  }
 
 .card:hover {
   box-shadow: 15px 15px 5px rgb(66, 66, 66);
